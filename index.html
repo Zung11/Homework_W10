@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homework week 9</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Maven+Pro&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    </head>
+    <body>
+        <h1>Homework week 9</h1>
+        <div id="BMI_map"></div>
+        <div id="bubble_plot"></div>
+
+        <script type="text/javascript">
+        var map ="js/BMI_map.json"
+        var spec2 = "js/bubble_plot.json"
+
+
+        vegaEmbed('#bubble_plot', spec2).then(function(result) {}) .catch(console.error)
+        vegaEmbed('#BMI_map', map).then(function(result) {}) .catch(console.error)
+        </script>
+    </body>
+</html>
