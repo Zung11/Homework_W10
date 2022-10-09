@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json", 
-  "width": "container",
+  "width": 300,
   "height": 300,
   "title": {
-  "text": "Suicide Rate in 2019 vs 2009",
+  "text": "Suicide Rate in 2019 vs 2009 by country",
   "fontSize": 20
 },
   "params": [
@@ -105,7 +105,7 @@
       "color": {"value": "black"},
       "opacity": {
         "condition": {
-          "test": "datum.Country == 'Brunei Darussalam' || datum.Country == 'Philippines' || datum.Country == 'Australia' || datum.Country == 'South Africa' || datum.Country == 'Barbados' || datum.Country == 'France' ||  datum.Country == 'Thailand'",
+          "test": "datum.Country == 'Syrian Arab Republic' || datum.Country == 'Philippines' || datum.Country == 'Australia' || datum.Country == 'South Africa' || datum.Country == 'Barbados' || datum.Country == 'France' ||  datum.Country == 'Saudi Arabia'",
           "value": 1
         },
         "value": 0
